@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+
+  <link rel="stylesheet" href="css/default.css">
+  <link rel="manifest" href="/manifest.json">
+
+  <title>Bowling Score App</title>
+</head>
+
+<body onload="startup();">
+  <h1>Bowling Score App</h1>
+  <table width="100%">
+    <tr>
+      <th colspan="11">Number of pins</th>
+    </tr>
+    <tr>
+      <th>
+        <button id="b0" type="button" onclick="numOfPins(0);">gutter</button>
+      </th>
+      <th>
+        <button id="b1" type="button" onclick="numOfPins(1);">1</button>
+      </th>
+      <th>
+        <button id="b2" type="button" onclick="numOfPins(2);">2</button>
+      </th>
+      <th>
+        <button id="b3" type="button" onclick="numOfPins(3);">3</button>
+      </th>
+      <th>
+        <button id="b4" type="button" onclick="numOfPins(4);">4</button>
+      </th>
+      <th>
+        <button id="b5" type="button" onclick="numOfPins(5);">5</button>
+      </th>
+      <th>
+        <button id="b6" type="button" onclick="numOfPins(6);">6</button>
+      </th>
+      <th>
+        <button id="b7" type="button" onclick="numOfPins(7);">7</button>
+      </th>
+      <th>
+        <button id="b8" type="button" onclick="numOfPins(8);">8</button>
+      </th>
+      <th>
+        <button id="b9" type="button" onclick="numOfPins(9);">9</button>
+      </th>
+      <th>
+        <button id="b10" type="button" onclick="numOfPins(10);">10</button>
+      </th>
+    </tr>
+    <tr>
+      <th class="blankRow"></th>
+    </tr>
+    <tr>
+      <th class="thbox">Name</th>
+      <th class="thbox">Frame 1</th>
+      <th class="thbox">Frame 2</th>
+      <th class="thbox">Frame 3</th>
+      <th class="thbox">Frame 4</th>
+      <th class="thbox">Frame 5</th>
+      <th class="thbox">Frame 6</th>
+      <th class="thbox">Frame 7</th>
+      <th class="thbox">Frame 8</th>
+      <th class="thbox">Frame 9</th>
+      <th class="thbox">Frame 10</th>
+    </tr>
+    <tr>
+      <td>
+      </td>
+      <td>
+        <table id="frame1" class="scorebox">
+          <tr>
+            <td id="f1b0" class="nobox"></td>
+            <td id="f1b1" class="box">5</td>
+            <td id="f1b2" class="box">4</td>
+          </tr>
+          <tr>
+            <td id="frame1score" colspan="3">
+              9
+            </td>
+          </tr>
+        </table>
+      </td>
+      <td>
+        <table id="frame2" class="scorebox">
+          <tr>
+            <td id="f2b0" class="nobox"></td>
+            <td id="f2b1" class="box">5</td>
+            <td id="f2b2" class="box">4</td>
+          </tr>
+          <tr>
+            <td id="frame2score" colspan="3">
+              18
+            </td>
+          </tr>
+        </table>
+      </td>
+      <td>
+        <table id="frame3" class="scorebox">
+          <tr>
+            <td id="f3b0" class="nobox"></td>
+            <td id="f3b1" class="box">5</td>
+            <td id="f3b2" class="box">4</td>
+          </tr>
+          <tr>
+            <td id="frame3score" colspan="3">
+              27
+            </td>
+          </tr>
+        </table>
+      </td>
+      <td>
+        <table id="frame4" class="scorebox">
+          <tr>
+            <td id="f4b0" class="nobox"></td>
+            <td id="f4b1" class="box">5</td>
+            <td id="f4b2" class="box">4</td>
+          </tr>
+          <tr>
+            <td id="frame4score" colspan="3">
+              36
+            </td>
+          </tr>
+        </table>
+      </td>
+      <td>
+        <table id="frame5" class="scorebox">
+          <tr>
+            <td id="f5b0" class="nobox"></td>
+            <td id="f5b1" class="box">5</td>
+            <td id="f5b2" class="box">4</td>
+          </tr>
+          <tr>
+            <td id="frame5score" colspan="3">
+              45
+            </td>
+          </tr>
+        </table>
+      </td>
+      <td>
+        <table id="frame6" class="scorebox">
+          <tr>
+            <td id="f6b0" class="nobox"></td>
+            <td id="f6b1" class="box">5</td>
+            <td id="f6b2" class="box">4</td>
+          </tr>
+          <tr>
+            <td id="frame6score" colspan="3">
+              54
+            </td>
+          </tr>
+        </table>
+      </td>
+      <td>
+        <table id="frame7" class="scorebox">
+          <tr>
+            <td id="f7b0" class="nobox"></td>
+            <td id="f7b1" class="box">5</td>
+            <td id="f7b2" class="box">4</td>
+          </tr>
+          <tr>
+            <td id="frame7score" colspan="3">
+              63
+            </td>
+          </tr>
+        </table>
+      </td>
+      <td>
+        <table id="frame8" class="scorebox">
+          <tr>
+            <td id="f8b0" class="nobox"></td>
+            <td id="f8b1" class="box">5</td>
+            <td id="f8b2" class="box">4</td>
+          </tr>
+          <tr>
+            <td id="frame8score" colspan="3">
+              72
+            </td>
+          </tr>
+        </table>
+      </td>
+      <td>
+        <table id="frame9" class="scorebox">
+          <tr>
+            <td id="f9b0" class="nobox"></td>
+            <td id="f9b1" class="box">5</td>
+            <td id="f9b2" class="box">4</td>
+          </tr>
+          <tr>
+            <td id="frame9score" colspan="3">
+              81
+            </td>
+          </tr>
+        </table>
+      </td>
+      <td>
+        <table id="frame10" class="scorebox">
+          <tr>
+            <td id="f10b0" class="box"></td>
+            <td id="f10b1" class="box">5</td>
+            <td id="f10b2" class="box">4</td>
+          </tr>
+          <tr>
+            <td id="frame10score" colspan="3">
+              90
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <th class="blankRow"></th>
+    </tr>
+    <tr>
+      <th colspan="11">
+        <button type="button" onclick="newGame()">New Game</button>
+        <button type="button" onclick="correct()">correct</button>
+      </th>
+    </tr>
+  </table>
+
+  <script src="js/default.js"></script>
+</body>
+
+</html>

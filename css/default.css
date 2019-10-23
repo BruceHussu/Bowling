@@ -1,0 +1,32 @@
+.scorebox{
+    border: 1px solid black;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+
+table{
+    width: 100%;
+}
+
+.box{
+    border: 1px solid black;
+    width: 33%;
+}
+
+.nobox{
+    width: 33%;
+}
+th{
+    padding: 0;
+    offset: 0;
+}
+
+.thbox{
+    width: 9%;
+}
+
+.blankRow{
+    height: 40px;
+}
