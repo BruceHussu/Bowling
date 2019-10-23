@@ -2,7 +2,14 @@ var frame;
 var ball;
 var total = [];
 var gameOver = true;
+window.onload = () => {
+    'use strict';
 
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker
+            .register('./sw.js');
+    }
+}
 function startup() {
     console.log("startup called");
     let col = 10;
