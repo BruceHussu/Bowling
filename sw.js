@@ -1,5 +1,8 @@
 var cacheName = 'bowling-pwa';
-var filesToCache = [];
+var filesToCache = [
+    'Bowling/',
+    'Bowling/index.html'
+];
 
 /* Start the service worker and cache all of the app's content */
 self.addEventListener('install', function (e) {
