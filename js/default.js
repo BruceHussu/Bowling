@@ -109,10 +109,11 @@ function enablePin() {
     }
 }
 function numOfPins(pinNum) {
-    if (gameOver) {
+    console.log("Number of Pins is " + pinNum);
+       if (gameOver) {
+        console.log("game is over");
         return;
     }
-    console.log("Number of Pins is " + pinNum);
     let pinscoreele;
     if (frame == 10) {
         pinscoreele = "f" + frame + "b" + (ball - 1)
