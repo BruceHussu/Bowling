@@ -2,18 +2,14 @@ var frame;
 var ball;
 var total = [];
 var gameOver = true;
-window.onload = () => {
-    'use strict';
-
+            
+function startup() {
+    console.log("startup called");
     if ('serviceWorker' in navigator) {
         navigator.serviceWorker
             .register('/Bowling/sw.js')
             .then(function() { console.log('Service Worker Registered'); });
     }
-}
-                  
-function startup() {
-    console.log("startup called");
     let col = 10;
     for (let i = 0; i < col; i++) {
         total[i] = [];
