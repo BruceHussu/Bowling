@@ -7,9 +7,11 @@ window.onload = () => {
 
     if ('serviceWorker' in navigator) {
         navigator.serviceWorker
-            .register('Bowling/sw.js');
+            .register('/Bowling/sw.js')
+            .then(function() { console.log('Service Worker Registered');
     }
 }
+                  
 function startup() {
     console.log("startup called");
     let col = 10;
