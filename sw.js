@@ -1,6 +1,7 @@
 var cacheName = 'bowling-pwa';
 var filesToCache = [
-
+'/Bowling/index.html',
+'/Bowling/js/default.js'
 ];
 
 /* Start the service worker and cache all of the app's content */
