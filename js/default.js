@@ -8,7 +8,7 @@ window.onload = () => {
     if ('serviceWorker' in navigator) {
         navigator.serviceWorker
             .register('/Bowling/sw.js')
-            .then(function() { console.log('Service Worker Registered');
+            .then(function() { console.log('Service Worker Registered'); });
     }
 }
                   
